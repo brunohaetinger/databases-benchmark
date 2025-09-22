@@ -64,4 +64,35 @@ source .venv/bin/activate   # Linux/macOS
 pip install -r requirements.txt
 ```
 
+---
 
+▶️ Usage
+
+Run the benchmark script with various options.
+
+Basic: write test, 2000 operations, 256-byte payload
+
+> python bench.py --db all --ops 2000 --payload 256 --mode write
+
+Read test only
+
+> python bench.py --db all --ops 2000 --payload 256 --mode read
+
+Concurrent test with 4 threads
+
+> python bench.py --db all --ops 4000 --payload 256 --mode write --concurrency 4
+
+
+Options
+
+```
+--db [sqlite|postgres|redis|all]   Which DB(s) to test (default=all)
+--ops N                            Number of operations (default=2000)
+--payload BYTES                    Payload size in bytes (default=256)
+--mode [write|read|both]           Operation type (default=write)
+--concurrency N                    Number of threads (default=1)
+--out PATH                         Output CSV path (default=results/result.csv)
+
+```
+```
+```
