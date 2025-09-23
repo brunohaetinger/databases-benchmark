@@ -57,7 +57,7 @@ docker-compose up -d
 
 ```
 ```
-python -m venv .venv
+python -m venv .venv        # or `uv venv`
 source .venv/bin/activate   # Linux/macOS
 .venv\Scripts\activate      # Windows PowerShell
 
