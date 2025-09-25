@@ -55,8 +55,7 @@ docker-compose up -d
 
 ### 2. Create virtual environment & install dependencies
 
-```
-```
+```bash
 python -m venv .venv        # or `uv venv`
 source .venv/bin/activate   # Linux/macOS
 .venv\Scripts\activate      # Windows PowerShell
